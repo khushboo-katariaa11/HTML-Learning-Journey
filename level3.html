@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 3 html</title>
+</head>
+<body>
+    <h1>tables in html</h1>
+    <!-- tables in html -->
+     <!-- table with semantics -->
+    <table border="on">
+        <caption>food menu</caption>
+        <thead>
+        <tr>
+           <th>iteam</th> 
+           <th>price</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>frooti</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>samosa</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>30</td>
+        </tr>
+    </tbody>
+    </table>
+    <hr>
+    <table border="black">
+        <thead>
+        <tr>
+            <th rowspan="2">item</th>
+            <th colspan="2">price</th>
+        </tr>
+   
+        <tr>
+            <th>INR</th>
+            <TH>USD</TH>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>frooti</td>
+            <td>10</td>
+            <td>0.04</td>
+        </tr>
+        <tr>
+            <td>samosa</td>
+            <td>20</td>
+            <td>0.04</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>30</td>
+            <td>0.04</td>
+        </tr>
+    </tbody>
+    </table>
+    <hr><table border="on">
+        <caption>A test table with merged cells</caption>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">average</th>
+            <th rowspan="2">red eyes</th>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+        </tr>
+        <tr>
+            <td>male</td>
+            <td>1.9</td>
+            <td>0.3</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>female</td>
+            <td>1.9</td>
+            <td>0.3</td>
+            <td>40%</td>
+        </tr>
+    </table>
+
+    <h1>forms in html</h1>
+    <form action="/action.php">
+
+<!-- multiple input tag using type attribute -->
+ <label >
+    Enter Username :
+        <input type="text" name="username" placeholder="enter text here">
+
+ </label>
+ <label >
+    Password:
+        <input type="password" placeholder="enter password">
+    </label>
+
+    <!-- we use labels with for attribute -->
+    <label for="n">enter your phone number</label>
+    <input type="number" placeholder="enter numbers only " id="n">
+       
+        <input type="time" name="" id="">
+<!-- default redirect to action.php -->
+        <button>submit</button>
+
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+        <button type="button ">do nothing</button>
+
+        <!-- creating button using input -->
+         <input type="submit" value="click me">
+         <label for="A">are you 10+</label>
+
+         <!-- creating checkbox -->
+         <input type="checkbox" name="age" id="a" value="yes">
+         <!-- radio button -->
+<label for="f">female</label>
+<input type="radio" name="gen" id="m" value="male">
+<label for="m">male</label>
+         <input type="radio" name="gen" id="f" value="female">
+
+         <!-- creating drop down -->
+<select name="car" id="">
+    <option value="nan">favorite car
+    </option>
+    <option value="tesla">tesla</option>
+    <option value="jaguar">jaguar</option>
+
+    <!-- creating range -->
+     <label for="v"></label>
+     <input type="range" min="0" max="100" step="10" name="vol" id="v">
+</select>
+
+
+<!-- adding textarea -->
+ <label for="feedback">enter your valuable feedback</label>
+<textarea name="feedback" id="feedback"></textarea>
+
+
+
+    </form>
+    <hr>
+    <h2>search on youtube</h2>
+    <form action="https://www.youtube.com/results?search_query=tmkoc">
+        <label for="s"></label>
+        <input type="text" name="search_query" id="s">
+        <button >submit</button>
+    </form>
+</body>
+    <h2>search on google</h2>
+    <form action="https://www.google.com/search?q=drive&sca_esv=308f0487964e9284&sxsrf=ADLYWIKjYvp5m9_c8LkkbRTj00rPnGK8IA%3A1730997331418&source=hp&ei=U-wsZ6WbF8mSseMPvtzLiAk&iflsig=AL9hbdgAAAAAZyz6Y5MV-FlJT_pXxTBnCnK2GqNA_JBy&oq=&gs_lp=Egdnd3Mtd2l6IgAqAggAMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCSPQHUABYAHABeACQAQCYAQCgAQCqAQC4AQHIAQCYAgGgAgaoAgqYAwaSBwExoAcA&sclient=gws-wiz">
+        <label for="s"></label>
+        <input type="text" name="q" id="s">
+        <button >submit</button>
+    </form>
+    <hr>
+
+    <h1>registration form</h1>
+
+    <form action="reg.php">
+        <div>
+    <input type="text" name="firstname" id="" placeholder="firstname">
+    <input type="text" name="lastname" id="" placeholder="lastname">
+</div>
+<div>
+
+    <label for="c">please select your gender</label>
+    <select name="gen" id="c">
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+</div>
+<div>
+
+    <label for="t">do you agree all terms and services</label>
+    <input type="checkbox" name="agree" id="t">
+    <label for="t">yes i am agree</label>
+</div>
+    <button type="submit">register</button>
+</form>
+</body>
+</html>
